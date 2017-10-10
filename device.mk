@@ -118,8 +118,12 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     Camera2 \
     camera.msm8996
+=======
+    SnapdragonCamera
+>>>>>>> parent of 45c4198... tried kanging some stuff from others to fix shits
 
 # Display
 PRODUCT_PACKAGES += \
@@ -245,26 +249,10 @@ PRODUCT_PACKAGES += \
     libxml2 \
     rild_socket
 
-# Sensors
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl
-	
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy
 
-# Subsystem silent restart
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.ssr.restart_level=venus,AR6320,slpi,modem,adsp
-
-# Offline charging
-#ADDITIONAL_DEFAULT_PROPERTIES += \
-#    ro.enable_boot_charger_mode=1 
-
-# FlipFlap
-#PRODUCT_PACKAGES += \
-#    FlipFlap
-	
 # Wifi
 PRODUCT_PACKAGES += \
     libwpa_client \
